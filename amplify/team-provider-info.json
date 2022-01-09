@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mfwitchesdemo-dev-114416-authRole",
+      "UnauthRoleArn": "arn:aws:iam::455563481328:role/amplify-mfwitchesdemo-dev-114416-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::455563481328:role/amplify-mfwitchesdemo-dev-114416-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-mfwitchesdemo-dev-114416-deployment",
+      "UnauthRoleName": "amplify-mfwitchesdemo-dev-114416-unauthRole",
+      "StackName": "amplify-mfwitchesdemo-dev-114416",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:455563481328:stack/amplify-mfwitchesdemo-dev-114416/486ae730-70e5-11ec-8b92-021ceaa38746",
+      "AmplifyAppId": "ddtvmipryrl39"
+    }
+  }
+}

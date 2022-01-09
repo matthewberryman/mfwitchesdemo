@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "mfwitchesdemo",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/matthew/code/logRocket_searchBar/amplify/backend/api/mfwitchesdemo/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-01-09T00:54:09.188Z",
+      "keyDescription": "API key"
+    }
+  }
+}

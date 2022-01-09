@@ -1,5 +1,9 @@
 // Home.js
 import React, { useState, useEffect } from "react";
+import Amplify, { API } from 'aws-amplify';
+import awsconfig from '../aws-exports';
+import { listMurdochBaddies } from '../graphql/queries';
+
 import {
   StyleSheet,
   Text,
@@ -10,6 +14,8 @@ import {
 import List from "../components/List";
 import SearchBar from "../components/SearchBar";
 
+Amplify.configure(awsconfig);
+
 const Home = () => {
   const [searchPhrase, setSearchPhrase] = useState("");
   const [clicked, setClicked] = useState(false);
@@ -18,18 +24,15 @@ const Home = () => {
   // get data from the fake api
   useEffect(() => {
     const getData = async () => {
-      const apiResponse = await fetch(
-        "https://my-json-server.typicode.com/kevintomas1995/logRocket_searchBar/languages"
-      );
-      const data = await apiResponse.json();
-      setFakeData(data);
+      const apiData = await API.graphql({ query: listMurdochBaddies });
+      setFakeData(apiData.data.listMurdochBaddies.items);
     };
     getData();
-  }, []);
+  }, [fakeData]);
 
   return (
     <SafeAreaView style={styles.root}>
-      {!clicked && <Text style={styles.title}>Programming Languages</Text>}
+      {!clicked && <Text style={styles.title}>News Corpse</Text>}
 
       <SearchBar
         searchPhrase={searchPhrase}

@@ -1,0 +1,44 @@
+mutation add1 {
+  createMurdochBaddy(input: 
+    { 
+      name: "The Australian", 
+      details: "Questionable opinions, published daily"
+    }) {
+    id
+    name
+    details
+  }
+}
+mutation add2 {
+  createMurdochBaddy(input: 
+    { 
+      name: "Fox News", 
+      details: "Faux News"
+    }) {
+    id
+    name
+    details
+  }
+}
+mutation add3 {
+  createMurdochBaddy(input: 
+    { 
+      name: "The Daily Telegraph", 
+      details: "Trolling Sydney since 1879"
+    }) {
+    id
+    name
+    details
+  }
+}
+mutation add4 {
+  createMurdochBaddy(input: 
+    { 
+      name: "The Adelaide Advertiser", 
+      details: "Where he who shall not be named got his start"
+    }) {
+    id
+    name
+    details
+  }
+}
